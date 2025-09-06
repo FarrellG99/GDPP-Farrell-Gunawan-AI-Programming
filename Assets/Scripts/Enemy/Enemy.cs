@@ -7,6 +7,8 @@ using UnityEngine.Serialization;
 public class Enemy : MonoBehaviour
 {
     public List<GameObject> waypoints;
+    public float chaseDistance;
+    public Player player;
 
     public PatrolState PatrolState = new PatrolState();
     public ChaseState ChaseState = new ChaseState();
@@ -26,5 +28,12 @@ public class Enemy : MonoBehaviour
     private void Update()
     {
         if(_currentState != null) _currentState.UpdateState(this);
+    }
+
+    public void SwitchState(BaseState state)
+    {
+        _currentState.ExitState(this);
+        _currentState = state;
+        _currentState.EnterState(this);
     }
 }

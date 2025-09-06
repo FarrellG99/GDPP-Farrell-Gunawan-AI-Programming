@@ -622,6 +622,8 @@ MonoBehaviour:
   - {fileID: 2107682441}
   - {fileID: 941805931}
   - {fileID: 888804252}
+  chaseDistance: 3
+  player: {fileID: 1573599956}
   agent: {fileID: 0}
 --- !u!136 &63702922
 CapsuleCollider:
@@ -4627,7 +4629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SerializedVersion: 0
-  m_OverrideArea: 1
+  m_OverrideArea: 0
   m_Area: 1
   m_OverrideGenerateLinks: 0
   m_GenerateLinks: 0
@@ -5053,7 +5055,7 @@ Transform:
   m_GameObject: {fileID: 941805931}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.58, y: 1, z: 15.25}
+  m_LocalPosition: {x: -8.77, y: 1, z: 12.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8796,7 +8798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 250cb6096f855bf4ca65509bdd9142f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 500
   mainCamera: {fileID: 0}
 --- !u!54 &1573599957
 Rigidbody:
@@ -8901,7 +8903,7 @@ Transform:
   m_GameObject: {fileID: 1609048617}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.56, y: 1, z: 15.25}
+  m_LocalPosition: {x: 8.18, y: 1, z: 13.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10202,7 +10204,7 @@ Transform:
   m_GameObject: {fileID: 1903103206}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.56, y: 1, z: -15.34}
+  m_LocalPosition: {x: 11.95, y: 1, z: -12.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12056,7 +12058,7 @@ Transform:
   m_GameObject: {fileID: 2107682441}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.33, y: 1, z: -15.25}
+  m_LocalPosition: {x: -12.5, y: 1, z: -12.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
