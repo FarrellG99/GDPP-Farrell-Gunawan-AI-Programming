@@ -25,6 +25,18 @@ public class Enemy : MonoBehaviour
         _currentState.EnterState(this);
     }
 
+    private void OnEnable()
+    {
+        player.OnPowerUpStart += StartRetreating;
+        player.OnPowerUpEnd += StopRetreating;
+    }
+
+    private void OnDisable()
+    {
+        player.OnPowerUpStart  -= StartRetreating;
+        player.OnPowerUpEnd -= StopRetreating;
+    }
+
     private void Update()
     {
         if(_currentState != null) _currentState.UpdateState(this);
@@ -35,5 +47,15 @@ public class Enemy : MonoBehaviour
         _currentState.ExitState(this);
         _currentState = state;
         _currentState.EnterState(this);
+    }
+
+    private void StartRetreating()
+    {
+        SwitchState(RetreatState);
+    }
+
+    private void StopRetreating()
+    {
+        SwitchState(PatrolState);
     }
 }
