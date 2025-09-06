@@ -15,12 +15,14 @@ public class Enemy : MonoBehaviour
     public RetreatState RetreatState = new RetreatState();
 
     [HideInInspector] public NavMeshAgent agent;
+    [HideInInspector] public Animator animator;
 
     private BaseState _currentState;
 
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
         _currentState = PatrolState;
         _currentState.EnterState(this);
     }

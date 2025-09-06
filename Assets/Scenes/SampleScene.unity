@@ -592,6 +592,7 @@ GameObject:
   - component: {fileID: 63702925}
   - component: {fileID: 63702924}
   - component: {fileID: 63702923}
+  - component: {fileID: 63702927}
   - component: {fileID: 63702922}
   - component: {fileID: 63702926}
   - component: {fileID: 63702921}
@@ -625,6 +626,7 @@ MonoBehaviour:
   chaseDistance: 3
   player: {fileID: 1573599956}
   agent: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!136 &63702922
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -738,6 +740,28 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &63702927
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63702920}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6c877f6764a2c674e86df1f2faf186c2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &222601089
 PrefabInstance:
   m_ObjectHideFlags: 0
