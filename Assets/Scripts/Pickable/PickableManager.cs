@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PickableManager : MonoBehaviour
 {
@@ -33,7 +34,11 @@ public class PickableManager : MonoBehaviour
         Destroy(pickable.gameObject);
         Debug.Log("Pickable List: " + _pickableList.Count);
         scoreManager.AddScore(1);
-        if (_pickableList.Count <= 0) Debug.Log("Win");
+        if (_pickableList.Count <= 0)
+        {
+            Debug.Log("Win");
+            SceneManager.LoadScene("WinScreen");
+        }
         if (pickable.pickableType == PickableType.PowerUp) player?.PickPowerUp();
     }
 }

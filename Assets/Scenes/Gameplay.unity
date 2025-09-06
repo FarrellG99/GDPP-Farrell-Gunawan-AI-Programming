@@ -9441,7 +9441,7 @@ MonoBehaviour:
   powerUpDuration: 5
   respawnPoint: {fileID: 1320235776}
   health: 3
-  healthText: {fileID: 0}
+  healthText: {fileID: 1011895547}
 --- !u!54 &1573599957
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -62,6 +63,7 @@ public class Player : MonoBehaviour
         {
             health = 0;
             Debug.Log("Lose");
+            SceneManager.LoadScene("LoseScreen");
         }
 
         UpdateUi();
